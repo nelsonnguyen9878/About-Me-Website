@@ -5,8 +5,8 @@
   --off-white: #f2f0ef;
   --graphite: #353535;
   --pale-slate: #d2d7df;
-  --silver: #bdbbb0;
-  --grey-olive: #8a897c;
+  --silver:  #8A897C;
+  --grey-olive: #69675C;
   --circle-size: clamp(400px, 45vw, 700px);
 }
 
@@ -273,7 +273,7 @@ fieldset {
 }
 
 .info-card p {
-  color: var(--grey-olive);
+  color: var(--graphite);
 }
 
 .card-top {
