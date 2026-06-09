@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Exercise 01 - Books</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="styles/contact.css"
+      <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION -->
+    <header>
+      <nav class="nav">
+        <a href="about_me.html" class="logo font-inter">
+          <div class="logo-box">N</div>
+          <p class="font-inter">Nelson</p>
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link font-inter" href="about_me.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-inter" href="previousWork.html"
+              >Previous Work</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-inter" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active font-inter" href="contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main class="font-inters">
+      <div class="contact-container">
+        <div class="contact-details">
+          <h2 class="contact-h2">CONTACT</h2>
+          <h1 class="contact-h1">Get In Touch.</h1>
+          <div class="accent-line"></div>
+          <p>
+            I'm always open to new opportunities, collaborations, or just a
+            friendly hello. Feel free to reach out!
+          </p>
+          <div class="contact-item">
+            <div class="icon-circle">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Email</h3>
+              <p>nelsonn@pdx.edu</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon-circle">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Phone</h3>
+              <p>503-810-3258</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon-circle">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Location</h3>
+              <p>Portland, Oregon, USA</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon-circle">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Linkedin</h3>
+              <p>https://www.linkedin.com/in/nelson-nguyen-47b7a0265/</p>
+            </div>
+          </div>
+        </div>
+        <div class="user-info">
+          <form class="contact-form">
+            <label for="name">YOUR NAME</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+            />
+            <label for="email">EMAIL ADDRESS</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+            <label for="subject">SUBJECT</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Enter subject"
+            />
+            <label for="messsage">MESSAGE</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="8"
+              placeholder="Enter message"
+            ></textarea>
+            <button>SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        Copyright Ⓒ 2026 Nelson Nguyen. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

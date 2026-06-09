@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Exercise 01 - Books</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION -->
+    <header>
+      <nav class="nav">
+        <a href="about_me.html" class="logo font-inter">
+          <div class="logo-box">N</div>
+          <p class="font-inter">Nelson</p>
+        </a>
+        <ul class="nav-list">
+          <!-- <li class="logo-box">N</div>
+          <span class="logo-text"> NELSON </span> -->
+          <li class="nav-item">
+            <a class="nav-link font-inter" href="about_me.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-inter" href="previousWork.html"
+              >Previous Work</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active font-inter" href="projects.html"
+              >Projects</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-inter" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main class="projects-page font-inter">
+      <!-- Hero -->
+      <section class="projects-hero">
+        <h1>Projects</h1>
+        <div class="accent-line"></div>
+
+        <p>
+          A collection of projects I've built to solve real problems, learn new
+          technologies, and improve my skills.
+        </p>
+      </section>
+
+      <!-- Featured Projects -->
+      <section class="featured-projects">
+        <h2>Featured Projects</h2>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="images/grafana.png" alt="grafana picture" />
+
+            <div class="project-content">
+              <h3>Automated Power Logger</h3>
+
+              <p class="tech-stack">Python, Linux, InfluxDB, Grafana</p>
+
+              <p>
+                Monitors power usage and visualizes data with a custom
+                dashboard.
+              </p>
+
+              <a href="#" class="project-btn">
+                View on GitHub
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/notebook.jpg" alt="Lab Notebook" />
+
+            <div class="project-content">
+              <h3>Lab Notebook</h3>
+
+              <p class="tech-stack">Markdown, Shell, Linux</p>
+
+              <p>
+                Personal homelab notebook containing guides and documentation.
+              </p>
+
+              <a href="#" class="project-btn">
+                View on GitHub
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/homelab.jpg" alt="Network" />
+
+            <div class="project-content">
+              <h3>Home Network Redesign</h3>
+
+              <p class="tech-stack">pfSense, VLANs, Networking</p>
+
+              <p>Redesigned my home network for security and performance.</p>
+
+              <a
+                href="https://github.com/nelsonnguyen9878/Homelab"
+                class="project-btn"
+              >
+                View on GitHub
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- GitHub API -->
+      <section class="github-section">
+        <div class="github-header">
+          <h2>GitHub Repositories</h2>
+
+          <a
+            href="https://github.com/nelsonnguyen9878?tab=repositories"
+            class="github-btn"
+          >
+            View All on GitHub
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <div id="repo-container">
+          <!-- JS inserts repo cards here -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        Copyright Ⓒ 2026 Nelson Nguyen. All rights reserved.
+      </div>
+    </footer>
+    <script src="githubAPI.js"></script>
+  </body>
+</html>

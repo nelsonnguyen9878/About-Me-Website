@@ -1,0 +1,97 @@
+/* Others */
+.contact-h2 {
+  margin: 0;
+  color: var(--grey-olive);
+}
+
+.contact-h1 {
+  font-size: 5em;
+  margin: 0 auto;
+}
+
+/* CONTACT Content */
+.contact-container {
+  display: grid;
+  max-width: 1400px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  margin: 3rem auto;
+}
+
+.user-info {
+  background-color: var(--off-white);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+
+  letter-spacing: 1px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+
+  border: 1px solid var(--pale-slate);
+  border-radius: 5px;
+
+  font-family: inherit;
+
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+
+  border-color: #8a897c;
+
+  box-shadow: 0 0 0 3px rgba(138, 137, 124, 0.2);
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+
+  background-color: #8a897c;
+  color: white;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  margin-bottom: 2rem;
+}
+
+.contact-item h3,
+.contact-item p {
+  margin: 0;
+}
+
+.icon-circle i {
+  color: var(--graphite);
+  font-size: 1.5 em;
+}
+
+.contact-item .icon-circle {
+  background-color: var(--off-white);
+}

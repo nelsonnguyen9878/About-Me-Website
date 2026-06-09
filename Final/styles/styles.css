@@ -1,0 +1,332 @@
+/* Add your CSS code here  */
+:root {
+  --background-color: #ffffff;
+  --white: #ffffff;
+  --off-white: #f2f0ef;
+  --graphite: #353535;
+  --pale-slate: #d2d7df;
+  --silver: #bdbbb0;
+  --grey-olive: #8a897c;
+  --circle-size: clamp(400px, 45vw, 700px);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--graphite);
+  line-height: 1.6;
+}
+
+/* Fonts */
+.font-inter {
+  font-family: "Inter";
+}
+
+fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+/* Navigation Styles */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--graphite);
+  color: var(--white);
+  z-index: 1;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+
+  text-decoration: none;
+}
+
+.logo p {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-box {
+  width: 40px;
+  height: 40px;
+
+  border: 2px solid #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0; /* 1rem */
+  padding-left: 0;
+  list-style: none;
+  text-align: right;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.nav-link {
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--white);
+  transition: background 0.5s, color 0.5s;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: -5px;
+
+  width: 0;
+  height: 2px;
+
+  background-color: var(--white);
+
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid var(--white);
+  color: var(--white);
+}
+
+.nav-link:hover {
+  background-color: var(--silver);
+  color: var(--graphite);
+}
+
+/* About Content */
+.about-container {
+  display: grid;
+  width: min(
+    90vw,
+    1200px
+  ); /* margin left and right, lots of white space on ultra wide monitors */
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  margin: 0 auto;
+}
+
+.about-image {
+  position: relative;
+  width: clamp(350px, 45vw, 700px);
+  aspect-ratio: 1;
+}
+
+.accent-line {
+  width: 120px;
+  height: 4px;
+  background: var(--grey-olive);
+  border-radius: 999px;
+  margin: 1rem 0;
+}
+
+.h1 {
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.h4 {
+  font-size: 1.5em;
+  color: var(--silver);
+  margin-bottom: 0;
+}
+
+.h5 {
+  font-size: 1em;
+  color: var(--grey-olive);
+  margin: 0;
+}
+
+/* Connect Row */
+.connect-row {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.connect-btn {
+  background-color: var(--grey-olive);
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+
+  text-decoration: none;
+
+  color: var(--white);
+}
+
+.connect-btn:hover {
+  background-color: var(--graphite);
+}
+
+.icon-btn {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: var(--graphite);
+}
+
+/* grey background circle */
+.background-circle {
+  position: absolute;
+
+  width: var(--circle-size);
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+  background: var(--silver);
+
+  top: -200px;
+  left: -350px;
+
+  z-index: -1;
+}
+
+/* Profile picture circle */
+.profile-circle {
+  position: absolute;
+
+  width: calc(var(--circle-size) * 0.65);
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  border: 12px solid white;
+
+  top: 100px;
+  left: 100px;
+
+  z-index: 1;
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* card-container */
+.card-container {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+
+  max-width: 1800px;
+
+  margin: auto;
+
+  padding: 0 2rem;
+}
+
+.info-card {
+  display: inline-block;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--pale-slate);
+
+  padding: 3rem;
+
+  border-radius: 16px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card h3 {
+  color: var(--graphite);
+
+  margin-bottom: 1rem;
+}
+
+.info-card p {
+  color: var(--grey-olive);
+}
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text h3 {
+  margin: 0;
+}
+.card-text p {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: white;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--graphite);
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--graphite);
+  color: var(--white);
+  margin-top: 6rem;
+  padding: 1rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
