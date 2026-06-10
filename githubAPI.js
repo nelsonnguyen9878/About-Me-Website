@@ -1,15 +1,11 @@
 const username = "nelsonnguyen9878";
 
-
 fetch(`https://api.github.com/users/${username}/repos`)
   .then((response) => response.json())
   .then((repos) => {
-
     const container =
       document.getElementById("repo-container");
-
     repos.forEach((repo) => {
-
       const card =
       document.createElement("div");
 
